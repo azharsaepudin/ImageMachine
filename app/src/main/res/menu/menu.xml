@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Short by Machine Name"
+        android:id="@+id/shortMachineName" />
+
+    <item
+        android:title="Short by Machine Type"
+        android:id="@+id/shortMachineType" />
+
+</menu>
