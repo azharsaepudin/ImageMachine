@@ -1,8 +1,6 @@
 package com.azhar.imagemachine.adapters;
 
 import android.app.Activity;
-import android.app.ListActivity;
-import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.azhar.imagemachine.Machine.DetailMachineActivity;
 import com.azhar.imagemachine.Machine.ListMachineActivity;
-import com.azhar.imagemachine.R;
 import com.azhar.imagemachine.databinding.ListMachineBinding;
 import com.azhar.imagemachine.models.Machine;
 

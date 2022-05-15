@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">ImageMachine</string>
+    <string name="app_name">Image Machine</string>
+    <string name="title_activity_image_full">ImageFullActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="machine_id">Machine Id:</string>
+    <string name="machine_name">Machine Name:</string>
+    <string name="machine_type">Machine Type :</string>
+    <string name="machine_qrcode">Machine QrCode :</string>
+    <string name="maintenance_date">Maintenance Date :</string>
+    <string name="add_image">Add Image</string>
+    <string name="full_image">Full Image</string>
+    <string name="delete">delete</string>
+    <string name="add_machine">Add Machine</string>
+    <string name="menu_machine">menu machine</string>
+    <string name="machine_data">Machine Data</string>
+    <string name="menu_scan_qr">menu scan qr</string>
+    <string name="scan_qrcode">Scan QrCode</string>
+    <string name="machine_name_tx">Machine Name</string>
+    <string name="machine_type_tx">Machine Type</string>
+    <string name="add_machine_btn">Add Machine</string>
+    <string name="update_btn">Update</string>
+    <string name="delete_btn">Delete</string>
+    <string name="image_list">image list</string>
+    <string name="machine_type_rv">Machine Type :</string>
+    <string name="short_by_machine_name">Short by Machine Name</string>
+    <string name="short_by_machine_type">Short by Machine Type</string>
 </resources>

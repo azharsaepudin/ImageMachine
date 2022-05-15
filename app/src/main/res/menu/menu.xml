@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="Short by Machine Name"
+        android:title="@string/short_by_machine_name"
         android:id="@+id/shortMachineName" />
 
     <item
-        android:title="Short by Machine Type"
+        android:title="@string/short_by_machine_type"
         android:id="@+id/shortMachineType" />
 
 </menu>

@@ -3,16 +3,12 @@ package com.azhar.imagemachine.Machine;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
-import android.app.Dialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.azhar.imagemachine.R;
@@ -39,6 +35,9 @@ public class ListMachineActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("List Machine");
+
         binding.rvListMachine.setHasFixedSize(true);
         binding.rvListMachine.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         getMachineData("machine_name");
@@ -64,6 +63,8 @@ public class ListMachineActivity extends AppCompatActivity {
         return true;
     }
 
+
+
     @Override
     public boolean onOptionsItemSelected(android.view.MenuItem item) {
         switch (item.getItemId()){
@@ -73,6 +74,10 @@ public class ListMachineActivity extends AppCompatActivity {
 
             case R.id.shortMachineType:
                 getMachineData("machine_type");
+                return true;
+
+            case android.R.id.home:
+                onBackPressed();
                 return true;
         }
         return super.onOptionsItemSelected(item);

@@ -29,13 +29,13 @@
                 tools:text="Machine name" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tvMcLbType"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="Machine Type :"
+                android:text="@string/machine_type_rv"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvMachineName" />
@@ -51,7 +51,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintStart_toEndOf="@+id/tvMcLbType"
                 app:layout_constraintTop_toBottomOf="@+id/tvMachineName"
                 tools:text="Machine type" />
 

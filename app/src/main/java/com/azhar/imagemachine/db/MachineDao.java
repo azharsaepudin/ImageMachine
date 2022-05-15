@@ -6,6 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
+import com.azhar.imagemachine.models.ImageModel;
 import com.azhar.imagemachine.models.Machine;
 
 import java.util.List;
@@ -28,5 +29,17 @@ public interface MachineDao {
 
     @Delete
     void delete(Machine machine);
+
+    @Insert
+    void insertImage(ImageModel imageModel);
+
+    @Query("select *  from tb_machine_image where machine_id =:mMachineId")
+    List<ImageModel>getAllMachineImage(String mMachineId);
+
+    @Query("SELECT machineId, machine_name, machine_type, maintenance_date, qr_code FROM (SELECT machineId, machine_name, machine_type, maintenance_date, machineId ||2022 AS qr_code FROM tb_machine_data) WHERE qr_code =:qrCode")
+    List<Machine> getIdMachine(String qrCode);
+
+    @Delete
+    void deletePhoto(ImageModel imageModel);
 
 }

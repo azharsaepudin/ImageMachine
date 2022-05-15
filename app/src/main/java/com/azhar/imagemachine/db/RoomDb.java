@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase;
 import com.azhar.imagemachine.models.ImageModel;
 import com.azhar.imagemachine.models.Machine;
 
-@Database(entities = {Machine.class, ImageModel.class}, version = 3, exportSchema = false)
+@Database(entities = {Machine.class, ImageModel.class}, version = 4, exportSchema = false)
 public abstract class RoomDb extends RoomDatabase {
     public abstract MachineDao machineDao();
 }
